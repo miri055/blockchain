@@ -1,11 +1,11 @@
 # Simple Blockchain Simulation
 
-## Overview
+## Overview 💮
 
 This project simulates a basic blockchain system in Python. It demonstrates core blockchain principles, including block structure, hash generation, and the chain validation process. The project helps to understand how blockchain technology works at a fundamental level, showcasing how blocks are linked together and how tampering with the data can be detected.
 
 The project includes:
-- A basic proof-of-work mechanism (difficulty level for mining blocks).
+- A basic proof-of-work mechanism.
 - A method to validate the integrity of the blockchain.
 - Simulates the creation of blocks with transactions.
 - Demonstrates how tampering with a block in the chain would invalidate the entire blockchain.
@@ -29,17 +29,13 @@ Manages the blockchain by:
 
 ### 1. **Genesis Block**
 The first block in the blockchain is created without any predecessor. This is known as the *genesis block*.
-
 ### 2. **Adding Transactions**
 Transactions are added to blocks. Each block can contain multiple transactions, which are stored as a list.
-
 ### 3. **Mining a Block**
 After a set of transactions is added, a new block is mined. This involves calculating the block's hash using the previous block’s hash and the current block's data.
-
 ### 4. **Validation**
 The chain's integrity is verified by checking:
 - If the current block’s hash matches its data.
 - If the previous block's hash is correctly linked to the current block.
-
 ### 5. **Tampering**
 If the data in any block is modified (for example, changing a transaction), the block’s hash changes, and the blockchain becomes invalid. This shows how tampering with data is detectable in a blockchain system.
